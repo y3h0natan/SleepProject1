@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class SignInScreen extends Fragment {
+public class BlueLightFilter extends Fragment {
 
 
     private static final String ARG_PARAM1 = "param1";
@@ -19,7 +19,7 @@ public class SignInScreen extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public SignInScreen() {
+    public BlueLightFilter() {
 
     }
 
