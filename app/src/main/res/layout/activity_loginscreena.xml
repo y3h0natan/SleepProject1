@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginScreen"
+    tools:context=".loginscreena"
     android:background="#FF8066">
 
 
@@ -25,37 +25,34 @@
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="274dp"
         android:layout_height="93dp"
+        android:layout_marginTop="264dp"
         android:ems="10"
         android:freezesText="false"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        android:outlineAmbientShadowColor="#000000"
-        android:outlineSpotShadowColor="#000000"
-        android:shadowColor="#000000"
-        android:textColor="#000000"
-        android:textColorHighlight="#000000"
         android:textColorHint="#9363B3"
-        android:textColorLink="#000000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="270dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
         android:layout_width="272dp"
         android:layout_height="71dp"
+        android:layout_marginTop="360dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
         android:text=""
         android:textColorHint="#9162B5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="363dp"
         android:textStyle="bold"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button3"
@@ -67,7 +64,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:textSize="30dp"
-        android:textColorLink="#835EC1"
+        android:textColorLink="#8057C5"
         style="@android:style/Widget.Material.Light.Button"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
