@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button Loginbuttonmain;
+    Button Signinbuttonmain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +21,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         Loginbuttonmain = findViewById(R.id.LoginBtn);
+        Signinbuttonmain = findViewById(R.id.SignInBtn);
 
         Loginbuttonmain.setOnClickListener(this);
+        Signinbuttonmain.setOnClickListener(this);
+
     }
 
     @Override
@@ -31,5 +35,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
             finish();
         }
+        if (view == Signinbuttonmain) {
+            Intent intent = new Intent(getApplicationContext(), SignInScreena.class);
+            startActivity(intent);
+            finish();
+        }
     }
+
+
 }

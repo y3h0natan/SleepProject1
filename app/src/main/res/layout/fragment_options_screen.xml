@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="#FF8066"
+    android:background="#222222"
     tools:context=".OptionsScreen">
 
 
@@ -15,31 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/cabin_sketch"
-        android:text="Welcome back"
-        android:textColor="#9262B6"
-        android:textSize="45dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/cabin_sketch"
-        android:text="Welcome back"
-        android:textColor="#9262B6"
-        android:textSize="45dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/cabin_sketch"
+        android:textStyle="bold"
         android:text="Welcome back"
         android:textColor="#9262B6"
         android:textSize="45dp"
@@ -47,34 +23,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <Button
-        android:id="@+id/button3"
-        style="@android:style/Widget.Holo.Button.Inset"
+    <ImageButton
+        android:id="@+id/imageButton2"
         android:layout_width="412dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="300dp"
-        android:text="Sleep community"
-        android:textColorLink="#835EC1"
-        android:textSize="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <Button
-        android:id="@+id/button4"
-        style="@android:style/Widget.Holo.Button.Inset"
-        android:layout_width="412dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="360dp"
-        android:text="Blue light filter"
-        android:textColorLink="#835EC1"
-        android:textSize="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="92dp"
+        android:src="@drawable/LogoSleepComunity123"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="247dp" />
 
     <Button
         android:id="@+id/button5"
@@ -105,19 +60,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="412dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/cabin_sketch"
-        android:text="Welcome back"
-        android:textColor="#9262B6"
-        android:textSize="45dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="DuplicateIds" />
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="409dp"
+        android:layout_height="88dp"
+        android:src="@drawable/bLUELIGHTFLTErlogo"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="339dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

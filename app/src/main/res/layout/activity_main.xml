@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#FF8066">
+    android:background="#222222">
 
     <ImageView
         android:id="@+id/imageView"
@@ -25,7 +25,6 @@
         android:layout_height="75dp"
         android:layout_marginTop="392dp"
         android:text="Login"
-        android:textColorLink="#230753"
         android:textSize="40dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,7 +54,8 @@
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#7C7C7C"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
