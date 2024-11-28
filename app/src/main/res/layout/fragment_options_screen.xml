@@ -23,14 +23,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="412dp"
-        android:layout_height="92dp"
-        android:src="@drawable/LogoSleepComunity123"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="247dp" />
-
     <Button
         android:id="@+id/button5"
         style="@android:style/Widget.Holo.Button.Inset"
@@ -59,14 +51,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="409dp"
-        android:layout_height="88dp"
-        android:src="@drawable/bLUELIGHTFLTErlogo"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="339dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
