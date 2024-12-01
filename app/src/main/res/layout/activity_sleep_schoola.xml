@@ -26,7 +26,7 @@
         android:layout_width="412dp"
         android:layout_height="60dp"
         android:layout_marginTop="300dp"
-        android:text="Sleep article#1"
+        android:text="what lack of sleep does?"
         android:textColorLink="#835EC1"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,12 +36,12 @@
 
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/Sleeptips"
         style="@android:style/Widget.Holo.Button.Inset"
         android:layout_width="412dp"
         android:layout_height="60dp"
         android:layout_marginTop="360dp"
-        android:text="Sleep article#2"
+        android:text="6 steps for the best sleep"
         android:textColorLink="#835EC1"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"

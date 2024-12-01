@@ -28,7 +28,7 @@ public class loginscreena extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         if (view == LoginbtnLog) {
-            Intent intent = new Intent(getApplicationContext(), OptionsScreen.class);
+            Intent intent = new Intent(getApplicationContext(), optionsScreena.class);
             startActivity(intent);
             finish();
         }

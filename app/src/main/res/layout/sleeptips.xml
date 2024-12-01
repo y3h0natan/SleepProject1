@@ -20,20 +20,24 @@
         android:id="@+id/textView"
         android:layout_width="353dp"
         android:layout_height="516dp"
-        android:text="Poor sleep can lead to serious health issues like heart disease and dementia. Dr. Marishka Brown explains that healthy sleep involves getting enough hours, good quality sleep, and a consistent schedule.
+        android:text="Stick to a Sleep Schedule: Aim for 7-8 hours of sleep, going to bed and waking up at the same time every day. If you can't fall asleep in 20 minutes, leave the bedroom and engage in a relaxing activity until you're tired.
 
-Sleep helps the brain repair itself, removing toxins linked to Alzheimer’s. Common sleep myths, such as the idea that older adults need less sleep, are debunked. Sleep disorders like insomnia and sleep apnea can disrupt sleep and harm health. The article encourages making sleep a priority and suggests treatments for sleep issues, including therapy and CPAP machines.
+        Watch Your Diet: Avoid heavy meals close to bedtime, and limit nicotine, caffeine, and alcohol, as they can disrupt sleep.
 
+Create a Restful Environment: Keep your bedroom cool, dark, and quiet, and limit light exposure before bed. Consider calming activities like a warm bath to help you wind down.
 
+Limit Daytime Naps: Keep naps short (under an hour) and avoid napping late in the day, unless necessary due to your work schedule.
 
+Exercise Regularly: Physical activity promotes better sleep, but avoid exercising too close to bedtime.
 
-"
+Manage Worries: Resolve concerns before bed, and use stress management techniques like journaling, organization, or meditation to ease anxiety.
+
+These habits can help improve sleep quality despite external stressors or disruptions."
         android:textColor="#9262B6"
-        android:textSize="22dp"
+        android:textSize="17dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.724"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.074" />

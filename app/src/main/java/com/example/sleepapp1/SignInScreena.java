@@ -32,7 +32,7 @@ public class SignInScreena extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View view) {
         if (view == SigninSig) {
-            Intent intent = new Intent(getApplicationContext(), OptionsScreen.class);
+            Intent intent = new Intent(getApplicationContext(), optionsScreena.class);
             startActivity(intent);
             finish();
         }
