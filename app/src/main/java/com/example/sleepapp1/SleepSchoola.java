@@ -2,6 +2,7 @@ package com.example.sleepapp1;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +19,7 @@ public class SleepSchoola extends AppCompatActivity implements View.OnClickListe
     Button SleepArticlebtn2;
     Button SleepArticlebtn3;
     Button SleepArticlebtn4;
+    ImageView Backbtn;
 
 
     @Override
@@ -38,10 +40,19 @@ public class SleepSchoola extends AppCompatActivity implements View.OnClickListe
         SleepArticlebtn4 = findViewById(R.id.sleepimportant);
         SleepArticlebtn4.setOnClickListener(this);
 
+        Backbtn = findViewById(R.id.ImageBack);
+        Backbtn.setOnClickListener(this);
+
     }
 
     @Override
     public void onClick(View view) {
+        if(view == Backbtn){
+            Intent intent = new Intent(getApplicationContext(), optionsScreena.class);
+            startActivity(intent);
+            finish();
+        }
+
         if (view == SleepArticlebtn1) {
             Showdialog();
         }
