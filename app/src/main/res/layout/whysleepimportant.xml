@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222">
+
+
+    <ScrollView
+        android:layout_width="431dp"
+        android:layout_height="904dp"
+        android:contentDescription="sup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="344dp"
+        android:layout_height="727dp"
+        android:text="Sleep is a vital process where the body rests while the brain remains active, performing crucial functions for physical and mental health, immune function, metabolism, and disease prevention. What we eat can impact sleep, with substances like caffeine negatively affecting sleep, while foods like tart cherries, kiwi, and fatty fish may promote better sleep. Poor sleep in young children can lead to behavioral issues, learning difficulties, and unhealthy eating habits. Adolescents need 8-10 hours of sleep, but biological changes make it hard for them to fall asleep early, contributing to sleep deprivation. Delayed school start times have been shown to improve sleep, grades, and mental health.
+
+Time changes due to daylight savings can disrupt sleep patterns, leading to negative health effects, including increased accidents and cardiac events. Sleep is essential for mental health, as poor sleep is linked to depression and anxiety. Alcohol can make falling asleep easier but disrupts sleep quality, causing interruptions. Finally, screen time before bed, particularly exposure to blue light, can interfere with sleep by affecting melatonin production, so it's recommended to avoid screens for an hour before bed."
+        android:textColor="#9262B6"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.074" />
+
+    <ImageView
+        android:id="@+id/Closedialogbtn"
+        android:layout_width="65dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="304dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/sleep" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

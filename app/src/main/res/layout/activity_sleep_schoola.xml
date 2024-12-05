@@ -50,12 +50,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/BluelightArticle"
         style="@android:style/Widget.Holo.Button.Inset"
         android:layout_width="412dp"
         android:layout_height="60dp"
         android:layout_marginTop="420dp"
-        android:text="Sleep article #3"
+        android:text="blue light affects on sleep"
         android:textColorLink="#835EC1"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,12 +65,12 @@
 
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/sleepimportant"
         style="@android:style/Widget.Holo.Button.Inset"
         android:layout_width="412dp"
         android:layout_height="60dp"
         android:layout_marginTop="480dp"
-        android:text="Sleep article#4"
+        android:text="The importance of sleep"
         android:textColorLink="#835EC1"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
