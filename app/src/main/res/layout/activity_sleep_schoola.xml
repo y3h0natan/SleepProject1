@@ -9,16 +9,16 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:text="Welcome to sleepschool"
+        android:layout_width="261dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="64dp"
+        android:text="sleepschool"
         android:textColor="#6750A3"
         android:textSize="45dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textStyle="bold"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/sleeparticlebtn"
@@ -80,13 +80,13 @@
 
     <ImageView
         android:id="@+id/ImageBack"
-        android:layout_width="77dp"
-        android:layout_height="73dp"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/restlogo" />
+        app:srcCompat="@drawable/invertedaarow" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

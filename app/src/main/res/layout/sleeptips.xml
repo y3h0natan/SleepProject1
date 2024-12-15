@@ -6,40 +6,44 @@
     android:layout_height="match_parent"
     android:background="#222222">
 
-    <ImageView
-        android:id="@+id/Closedialogbtn"
-        android:layout_width="65dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="304dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="410dp"
+        android:layout_height="852dp"
+        android:contentDescription="sussy"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/sleep" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="353dp"
-        android:layout_height="516dp"
-        android:text="Stick to a Sleep Schedule: Aim for 7-8 hours of sleep, going to bed and waking up at the same time every day. If you can't fall asleep in 20 minutes, leave the bedroom and engage in a relaxing activity until you're tired.
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        Watch Your Diet: Avoid heavy meals close to bedtime, and limit nicotine, caffeine, and alcohol, as they can disrupt sleep.
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="380dp"
+                android:layout_height="898dp"
+                android:layout_marginTop="176dp"
+                android:text="Stick to a Sleep Schedule: Aim for 7-8 hours of sleep, going to bed and waking up at the same time every day. If you can't fall asleep in 20 minutes, leave the bedroom and engage in a relaxing activity until you're tired. Watch Your Diet: Avoid heavy meals close to bedtime, and limit nicotine, caffeine, and alcohol, as they can disrupt sleep. Create a Restful Environment: Keep your bedroom cool, dark, and quiet, and limit light exposure before bed. Consider calming activities like a warm bath to help you wind down. Limit Daytime Naps: Keep naps short (under an hour) and avoid napping late in the day, unless necessary due to your work schedule. Exercise Regularly: Physical activity promotes better sleep, but avoid exercising too close to bedtime.
+Manage Worries: Resolve concerns before bed, and use stress management techniques like journaling, organization, or meditation to ease anxiety. These habits can help improve sleep quality despite external stressors or disruptions."
+                android:textColor="#9262B6"
+                android:textSize="19dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.428"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-Create a Restful Environment: Keep your bedroom cool, dark, and quiet, and limit light exposure before bed. Consider calming activities like a warm bath to help you wind down.
+            <ImageView
+                android:id="@+id/Closedialogbtn"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="272dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/invertedaarow" />
 
-Limit Daytime Naps: Keep naps short (under an hour) and avoid napping late in the day, unless necessary due to your work schedule.
-
-Exercise Regularly: Physical activity promotes better sleep, but avoid exercising too close to bedtime.
-
-Manage Worries: Resolve concerns before bed, and use stress management techniques like journaling, organization, or meditation to ease anxiety.
-
-These habits can help improve sleep quality despite external stressors or disruptions."
-        android:textColor="#9262B6"
-        android:textSize="17dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.074" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
