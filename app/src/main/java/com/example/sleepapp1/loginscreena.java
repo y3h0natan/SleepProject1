@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class loginscreena extends AppCompatActivity implements View.OnClickListener {
 
     Button LoginbtnLog;
-    ImageButton Backbtn;
+    ImageView Backbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class SignInScreena extends AppCompatActivity implements View.OnClickListener {
 
     Button SigninSig;
-    ImageButton Backbtn;
+    ImageView Backbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
