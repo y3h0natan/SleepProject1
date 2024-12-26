@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "34410145506",
+    "project_id": "resteasyprojectandroid",
+    "storage_bucket": "resteasyprojectandroid.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:34410145506:android:35fc12c2efa42d3c57e0bb",
+        "android_client_info": {
+          "package_name": "com.example.sleepapp1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBalUDMpSsD2kwDRbRwLL194LoQLi4iUkE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

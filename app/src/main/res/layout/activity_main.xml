@@ -20,6 +20,7 @@
 
     <Button
         android:id="@+id/LoginBtn"
+        android:textColor="#FFFFFF"
         style="@android:style/Widget.Material.Light.Button"
         android:layout_width="284dp"
         android:layout_height="75dp"
@@ -39,6 +40,7 @@
         android:layout_marginTop="500dp"
         android:text="Sign up"
         android:textSize="20dp"
+        android:textColor="@color/white"
         android:textStyle="normal|bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
