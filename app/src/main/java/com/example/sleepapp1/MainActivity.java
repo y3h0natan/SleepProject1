@@ -12,7 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button Loginbuttonmain;
-    Button Signinbuttonmain;
+    Button Signinbuttonmain, Button;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,9 +21,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
+        Button = findViewById(R.id.button);
         Loginbuttonmain = findViewById(R.id.LoginBtn);
         Signinbuttonmain = findViewById(R.id.SignInBtn);
 
+        Button.setOnClickListener(this);
         Loginbuttonmain.setOnClickListener(this);
         Signinbuttonmain.setOnClickListener(this);
 
@@ -30,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
+
         if (view == Loginbuttonmain) {
             Intent intent = new Intent(getApplicationContext(), loginscreena.class);
             startActivity(intent);
@@ -40,7 +44,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
             finish();
         }
+
+        if (view == Button) {
+            Intent intent = new Intent(getApplicationContext(), optionsScreena.class);
+            startActivity(intent);
+            finish();
+        }
+
+
     }
-
-
 }

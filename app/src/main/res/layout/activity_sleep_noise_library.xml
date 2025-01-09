@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:background="#222222"
-    tools:context="optionsScreena">
+    tools:context=".SleepNoiseLibrary">
 
 
     <TextView
@@ -16,7 +16,7 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="16dp"
         android:textStyle="bold"
-        android:text="Welcome back"
+        android:text="Sleep noises"
         android:textColor="#9262B6"
         android:textSize="45dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,12 +24,12 @@
 
 
     <Button
-        android:id="@+id/Soundslib"
+        android:id="@+id/HveavyRainBtn"
         style="@android:style/Widget.Holo.Button.Inset"
         android:layout_width="412dp"
         android:layout_height="60dp"
         android:layout_marginTop="420dp"
-        android:text="sleep noises library"
+        android:text="Heavy rain on windows"
         android:textColorLink="#835EC1"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,13 +44,22 @@
         android:layout_width="412dp"
         android:layout_height="60dp"
         android:layout_marginTop="480dp"
-        android:text="Sleep Education"
+        android:text="Waves on the beach"
         android:textColorLink="#835EC1"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/backbtn"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/invertedaarow" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

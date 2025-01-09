@@ -14,15 +14,18 @@ import androidx.core.view.WindowInsetsCompat;
 public class optionsScreena extends AppCompatActivity implements View.OnClickListener {
 
 
-    Button SleepSchooled;
+    Button SleepSchooled, SoundsLib;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_options_screena);
-
+        SoundsLib = findViewById(R.id.Soundslib);
         SleepSchooled = findViewById(R.id.sleepEDbtn);
+
+        SoundsLib.setOnClickListener(this);
         SleepSchooled.setOnClickListener(this);
 
     }
@@ -31,6 +34,12 @@ public class optionsScreena extends AppCompatActivity implements View.OnClickLis
     public void onClick(View view) {
         if (view == SleepSchooled) {
             Intent intent = new Intent(getApplicationContext(), SleepSchoola.class);
+            startActivity(intent);
+            finish();
+        }
+
+        if (view == SoundsLib) {
+            Intent intent = new Intent(getApplicationContext(), SleepNoiseLibrary.class);
             startActivity(intent);
             finish();
         }
