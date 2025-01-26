@@ -50,8 +50,6 @@ public class SleepNoiseLibrary extends AppCompatActivity implements View.OnClick
         Dialog dialog = new Dialog(this);
         dialog.setContentView(R.layout.audioplayerlayout);
 
-        Button Stop, pause, play;
-
         ImageView closedialog = dialog.findViewById(R.id.Closedialogbtn);
         closedialog.setOnClickListener(new View.OnClickListener() {
             @Override

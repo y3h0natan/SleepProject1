@@ -16,7 +16,7 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="16dp"
         android:textStyle="bold"
-        android:text="Sleep noises"
+        android:text="Good night!"
         android:textColor="#9262B6"
         android:textSize="45dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,7 +28,7 @@
         style="@android:style/Widget.Holo.Button.Inset"
         android:layout_width="412dp"
         android:layout_height="60dp"
-        android:layout_marginTop="420dp"
+        android:layout_marginTop="316dp"
         android:text="Play"
         android:textColorLink="#835EC1"
         android:textSize="30dp"
@@ -37,18 +37,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <Button
         android:id="@+id/Pausebtn"
         style="@android:style/Widget.Holo.Button.Inset"
         android:layout_width="412dp"
         android:layout_height="60dp"
-        android:layout_marginTop="360dp"
+        android:layout_marginTop="256dp"
         android:text="Pause"
         android:textColorLink="#835EC1"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -57,20 +56,21 @@
         style="@android:style/Widget.Holo.Button.Inset"
         android:layout_width="412dp"
         android:layout_height="60dp"
-        android:layout_marginTop="480dp"
+        android:layout_marginTop="376dp"
         android:text="Stop"
         android:textColorLink="#835EC1"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
-        android:id="@+id/backbtn"
+        android:id="@+id/Closedialogbtn"
         android:layout_width="60dp"
         android:layout_height="55dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/invertedaarow" />
