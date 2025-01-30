@@ -68,7 +68,7 @@ public class SleepSchoola extends AppCompatActivity implements View.OnClickListe
         }
 
         if (view == SleepArticlebtn2) {
-            Showdialog2();
+
         }
 
         if (view == SleepArticlebtn3){
