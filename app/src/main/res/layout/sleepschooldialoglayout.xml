@@ -1,56 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#222222"
-    android:contentDescription="sus"
-    android:padding="25dp">
+    android:padding="25dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/articleTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="Title Here"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <ScrollView
-        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:contentDescription="su["
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </ScrollView>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
-        android:layout_width="382dp"
-        android:layout_height="636dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="400dp"
+        android:fillViewport="true">
 
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="367dp"
-            android:layout_height="504dp"
-            android:text="Poor sleep can lead to serious health issues like heart disease and dementia. Dr. Marishka Brown explains that healthy sleep involves getting enough hours, good quality sleep, and a consistent schedule.
-Sleep helps the brain repair itself, removing toxins linked to Alzheimer’s. Common sleep myths, such as the idea that older adults need less sleep, are debunked. Sleep disorders like insomnia and sleep apnea can disrupt sleep and harm health. The article encourages making sleep a priority and suggests treatments for sleep issues, including therapy and CPAP machines.
-    "
-            android:textColor="#9262B6"
-            android:textSize="22dp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:id="@+id/articleContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="Content Here"
+            android:textSize="16sp" />
+    </ScrollView>
 
-        <ImageView
-            android:id="@+id/Closedialogbtn"
-            android:layout_width="82dp"
-            android:layout_height="69dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/invertedaarow" />
+    <ImageView
+        android:id="@+id/closeButton"
+        android:layout_width="75dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/invertedaarow" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

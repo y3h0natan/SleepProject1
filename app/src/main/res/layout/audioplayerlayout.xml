@@ -6,21 +6,8 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:background="#222222"
-    tools:context=".SleepNoiseLibrary">
-
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="16dp"
-        android:textStyle="bold"
-        android:text="Good night!"
-        android:textColor="#9262B6"
-        android:textSize="45dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    tools:context=".SleepNoiseLibrary"
+    android:padding="10dp">
 
 
     <Button
@@ -28,12 +15,12 @@
         style="@android:style/Widget.Holo.Button.Inset"
         android:layout_width="412dp"
         android:layout_height="60dp"
-        android:layout_marginTop="316dp"
+        android:layout_marginTop="224dp"
         android:text="Play"
         android:textColorLink="#835EC1"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -42,12 +29,12 @@
         style="@android:style/Widget.Holo.Button.Inset"
         android:layout_width="412dp"
         android:layout_height="60dp"
-        android:layout_marginTop="256dp"
+        android:layout_marginTop="148dp"
         android:text="Pause"
         android:textColorLink="#835EC1"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -56,12 +43,12 @@
         style="@android:style/Widget.Holo.Button.Inset"
         android:layout_width="412dp"
         android:layout_height="60dp"
-        android:layout_marginTop="376dp"
+        android:layout_marginTop="300dp"
         android:text="Stop"
         android:textColorLink="#835EC1"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -69,8 +56,8 @@
         android:id="@+id/Closedialogbtn"
         android:layout_width="60dp"
         android:layout_height="55dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="276dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/invertedaarow" />

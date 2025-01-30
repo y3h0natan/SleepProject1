@@ -35,7 +35,7 @@ public class SleepNoiseLibrary extends AppCompatActivity implements View.OnClick
     @Override
     public void onClick(View view) {
         if (view == Backbtn) {
-            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            Intent intent = new Intent(getApplicationContext(), optionsScreena.class);
             startActivity(intent);
             finish();
 
