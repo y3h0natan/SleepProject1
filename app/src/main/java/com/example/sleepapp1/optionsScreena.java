@@ -10,12 +10,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+
+import com.google.android.material.navigation.NavigationView;
 
 public class optionsScreena extends AppCompatActivity implements View.OnClickListener {
 
 
     Button SleepSchooled, SoundsLib;
-
+    private DrawerLayout drawerLayout;
+    private NavigationView navigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +31,8 @@ public class optionsScreena extends AppCompatActivity implements View.OnClickLis
 
         SoundsLib.setOnClickListener(this);
         SleepSchooled.setOnClickListener(this);
+        drawerLayout = findViewById(R.id.drawer_layout);
+        navigationView = findViewById(R.id.nav_view);
 
     }
 
