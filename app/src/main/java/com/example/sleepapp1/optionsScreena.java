@@ -18,8 +18,7 @@ public class optionsScreena extends AppCompatActivity implements View.OnClickLis
 
 
     Button SleepSchooled, SoundsLib;
-    private DrawerLayout drawerLayout;
-    private NavigationView navigationView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +30,7 @@ public class optionsScreena extends AppCompatActivity implements View.OnClickLis
 
         SoundsLib.setOnClickListener(this);
         SleepSchooled.setOnClickListener(this);
-        drawerLayout = findViewById(R.id.drawer_layout);
-        navigationView = findViewById(R.id.nav_view);
+
 
     }
 
