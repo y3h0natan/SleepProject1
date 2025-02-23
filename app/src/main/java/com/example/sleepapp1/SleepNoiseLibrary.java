@@ -30,6 +30,9 @@ public class SleepNoiseLibrary extends AppCompatActivity implements View.OnClick
         Rain = findViewById(R.id.HveavyRainBtn);
         Rain.setOnClickListener(this);
 
+        Beach = findViewById(R.id.BeachSoundsBtn);
+        Beach.setOnClickListener(this);
+
     }
 
     @Override
@@ -42,6 +45,10 @@ public class SleepNoiseLibrary extends AppCompatActivity implements View.OnClick
         }
 
         if(view == Rain){
+            Showdialog();
+        }
+
+        if(view == Beach){
             Showdialog();
         }
     }

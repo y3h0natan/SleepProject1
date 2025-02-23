@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,7 +17,7 @@ import com.google.android.material.navigation.NavigationView;
 
 public class optionsScreena extends AppCompatActivity implements View.OnClickListener {
 
-
+    ImageView CogWheel;
     Button SleepSchooled, SoundsLib;
 
 
@@ -27,7 +28,9 @@ public class optionsScreena extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.activity_options_screena);
         SoundsLib = findViewById(R.id.Soundslib);
         SleepSchooled = findViewById(R.id.sleepEDbtn);
+        CogWheel = findViewById(R.id.CogBtn);
 
+        CogWheel.setOnClickListener(this);
         SoundsLib.setOnClickListener(this);
         SleepSchooled.setOnClickListener(this);
 
@@ -44,6 +47,11 @@ public class optionsScreena extends AppCompatActivity implements View.OnClickLis
 
         if (view == SoundsLib) {
             Intent intent = new Intent(getApplicationContext(), SleepNoiseLibrary.class);
+            startActivity(intent);
+            finish();
+        }
+        if (view == CogWheel) {
+            Intent intent = new Intent(getApplicationContext(), ProfilePage.class);
             startActivity(intent);
             finish();
         }

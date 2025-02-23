@@ -39,7 +39,7 @@
 
 
     <Button
-        android:id="@+id/sleepEDbtn"
+        android:id="@+id/BeachSoundsBtn"
         style="@android:style/Widget.Holo.Button.Inset"
         android:layout_width="412dp"
         android:layout_height="60dp"

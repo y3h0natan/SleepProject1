@@ -42,14 +42,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/CogBtn"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="332dp"
         android:layout_marginTop="44dp"
         android:src="@drawable/settings"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
