@@ -2,16 +2,15 @@ package com.example.sleepapp1;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class SleepNoiseLibrary extends AppCompatActivity implements View.OnClickListener {
 
@@ -33,6 +32,10 @@ public class SleepNoiseLibrary extends AppCompatActivity implements View.OnClick
         Beach = findViewById(R.id.BeachSoundsBtn);
         Beach.setOnClickListener(this);
 
+
+
+
+
     }
 
     @Override
@@ -45,25 +48,48 @@ public class SleepNoiseLibrary extends AppCompatActivity implements View.OnClick
         }
 
         if(view == Rain){
-            Showdialog();
+            Showdialog1();
         }
 
         if(view == Beach){
-            Showdialog();
+            Showdialog2();
         }
     }
 
-    private void Showdialog() {
+    private void Showdialog1() {
+        Dialog dialog = new Dialog(this);
+        dialog.setContentView(R.layout.audioplayerlayout);
+
+        final MediaPlayer mediaPlayer = MediaPlayer.create(this,R.raw.rainsounds);
+
+
+        Button playAudioButton = dialog.findViewById(R.id.Playbtn);
+        playAudioButton.setOnClickListener(v -> {
+
+
+
+
+
+            if (!mediaPlayer.isPlaying()) {
+                mediaPlayer.start();
+                Toast.makeText(SleepNoiseLibrary.this, "Playing Audio", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        Button closeButton = dialog.findViewById(R.id.Stopbtn);
+        ImageView closedialog = dialog.findViewById(R.id.Closedialogbtn);
+        closedialog.setOnClickListener(view -> dialog.dismiss());
+
+
+        dialog.show();
+    }
+
+    private void Showdialog2() {
         Dialog dialog = new Dialog(this);
         dialog.setContentView(R.layout.audioplayerlayout);
 
         ImageView closedialog = dialog.findViewById(R.id.Closedialogbtn);
-        closedialog.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                dialog.dismiss();
-            }
-        });
+        closedialog.setOnClickListener(view -> dialog.dismiss());
 
 
         dialog.show();
