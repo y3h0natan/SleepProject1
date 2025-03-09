@@ -11,9 +11,12 @@
 
 
     <TextView
+        android:fontFamily="sans-serif"
+        android:textColor="#7C7C7C"
         android:id="@+id/Email"
         android:layout_width="183dp"
         android:layout_height="30dp"
+        android:textSize="17dp"
         android:layout_marginStart="112dp"
         android:layout_marginTop="220dp"
         android:gravity="center"
@@ -22,6 +25,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:fontFamily="sans-serif"
+        android:textColor="#7C7C7C"
         android:id="@+id/Name"
         android:layout_width="294dp"
         android:layout_height="40dp"
@@ -34,6 +39,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
+        android:padding="5dp"
+        android:background="@drawable/roundimage"
         android:id="@+id/profileImae"
         android:layout_width="122dp"
         android:layout_height="113dp"
@@ -53,6 +60,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/invertedaarow" />
+
+
+    <ImageView
+        android:id="@+id/Logout"
+        android:layout_width="37dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="348dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logoutlllll"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="57dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="336dp"
+        android:layout_marginTop="64dp"
+        android:text="LogOut"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/white"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -62,14 +62,10 @@ public class SleepNoiseLibrary extends AppCompatActivity implements View.OnClick
 
         final MediaPlayer mediaPlayer = MediaPlayer.create(this,R.raw.rainsounds);
 
-
         Button playAudioButton = dialog.findViewById(R.id.Playbtn);
+
+
         playAudioButton.setOnClickListener(v -> {
-
-
-
-
-
             if (!mediaPlayer.isPlaying()) {
                 mediaPlayer.start();
                 Toast.makeText(SleepNoiseLibrary.this, "Playing Audio", Toast.LENGTH_SHORT).show();
