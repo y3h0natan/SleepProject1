@@ -60,17 +60,41 @@ public class SleepNoiseLibrary extends AppCompatActivity implements View.OnClick
         Dialog dialog = new Dialog(this);
         dialog.setContentView(R.layout.audioplayerlayout);
 
-        final MediaPlayer mediaPlayer = MediaPlayer.create(this,R.raw.rainsounds);
+        final MediaPlayer[] mediaPlayer = {MediaPlayer.create(this, R.raw.rainsounds)};
 
+
+        Button StopAudioButton = dialog.findViewById(R.id.Stopbtn);
+        Button PauseAudioButton = dialog.findViewById(R.id.Pausebtn);
         Button playAudioButton = dialog.findViewById(R.id.Playbtn);
 
 
+
+        StopAudioButton.setOnClickListener(v -> {
+            if (mediaPlayer[0].isPlaying()) {
+                mediaPlayer[0].stop();
+                mediaPlayer[0].release();
+                mediaPlayer[0] = MediaPlayer.create(this,R.raw.rainsounds);
+                Toast.makeText(SleepNoiseLibrary.this, "Stopping Audio", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        PauseAudioButton.setOnClickListener(v -> {
+            if (mediaPlayer[0].isPlaying()) {
+                mediaPlayer[0].pause();
+
+            }
+        });
+
         playAudioButton.setOnClickListener(v -> {
-            if (!mediaPlayer.isPlaying()) {
-                mediaPlayer.start();
+            if (!mediaPlayer[0].isPlaying()) {
+                mediaPlayer[0].start();
+                mediaPlayer[0].setLooping(true);
                 Toast.makeText(SleepNoiseLibrary.this, "Playing Audio", Toast.LENGTH_SHORT).show();
             }
         });
+
+
+
 
         Button closeButton = dialog.findViewById(R.id.Stopbtn);
         ImageView closedialog = dialog.findViewById(R.id.Closedialogbtn);
@@ -83,6 +107,42 @@ public class SleepNoiseLibrary extends AppCompatActivity implements View.OnClick
     private void Showdialog2() {
         Dialog dialog = new Dialog(this);
         dialog.setContentView(R.layout.audioplayerlayout);
+
+        final MediaPlayer[] mediaPlayer = {MediaPlayer.create(this, R.raw.oceanwaves)};
+
+
+        Button StopAudioButton = dialog.findViewById(R.id.Stopbtn);
+        Button PauseAudioButton = dialog.findViewById(R.id.Pausebtn);
+        Button playAudioButton = dialog.findViewById(R.id.Playbtn);
+
+
+
+        StopAudioButton.setOnClickListener(v -> {
+            if (mediaPlayer[0].isPlaying()) {
+                mediaPlayer[0].stop();
+                mediaPlayer[0].release();
+                mediaPlayer[0] = MediaPlayer.create(this,R.raw.oceanwaves);
+                Toast.makeText(SleepNoiseLibrary.this, "Stopping Audio", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        PauseAudioButton.setOnClickListener(v -> {
+            if (mediaPlayer[0].isPlaying()) {
+                mediaPlayer[0].pause();
+
+            }
+        });
+
+        playAudioButton.setOnClickListener(v -> {
+            if (!mediaPlayer[0].isPlaying()) {
+                mediaPlayer[0].start();
+                mediaPlayer[0].setLooping(true);
+                Toast.makeText(SleepNoiseLibrary.this, "Playing Audio", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+
 
         ImageView closedialog = dialog.findViewById(R.id.Closedialogbtn);
         closedialog.setOnClickListener(view -> dialog.dismiss());

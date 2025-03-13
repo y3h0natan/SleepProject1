@@ -20,7 +20,7 @@
         android:layout_marginStart="112dp"
         android:layout_marginTop="220dp"
         android:gravity="center"
-        android:text="TextView"
+        android:text="YourEmail"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -33,7 +33,7 @@
         android:layout_marginStart="56dp"
         android:layout_marginTop="264dp"
         android:gravity="center"
-        android:text="SussyBaka31"
+        android:text="YourName"
         android:textSize="25dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -41,7 +41,7 @@
     <ImageView
         android:padding="5dp"
         android:background="@drawable/roundimage"
-        android:id="@+id/profileImae"
+        android:id="@+id/profileImage"
         android:layout_width="122dp"
         android:layout_height="113dp"
         android:layout_marginTop="92dp"
@@ -84,6 +84,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:textColor="@color/white"/>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
