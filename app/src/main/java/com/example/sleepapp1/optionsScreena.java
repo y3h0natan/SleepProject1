@@ -1,61 +1,71 @@
 package com.example.sleepapp1;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
-
-import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class optionsScreena extends AppCompatActivity implements View.OnClickListener {
+public class optionsScreena extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    ImageView CogWheel;
-    Button SleepSchooled, SoundsLib;
-
+    private DrawerLayout drawerLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_options_screena);
-        SoundsLib = findViewById(R.id.Soundslib);
-        SleepSchooled = findViewById(R.id.sleepEDbtn);
-        CogWheel = findViewById(R.id.CogBtn);
+        setContentView(R.layout.activity_main);
 
-        CogWheel.setOnClickListener(this);
-        SoundsLib.setOnClickListener(this);
-        SleepSchooled.setOnClickListener(this);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
+        drawerLayout = findViewById(R.id.drawer_layout);
+        NavigationView navigationView = findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
 
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.open_nav,
+                R.string.close_nav);
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
+
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new zHomeFragment()).commit();
+            navigationView.setCheckedItem(R.id.nav_home);
+        }
     }
 
     @Override
-    public void onClick(View view) {
-        if (view == SleepSchooled) {
-            Intent intent = new Intent(getApplicationContext(), SleepSchoola.class);
-            startActivity(intent);
-            finish();
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.nav_home:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new zHomeFragment()).commit();
+                break;
+
+            case R.id.nav_settings:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new zHomeFragment()).commit();
+                break;
+
+            case R.id.nav_logout:
+                Toast.makeText(this, "Logout!", Toast.LENGTH_SHORT).show();
+                break;
         }
 
+        drawerLayout.closeDrawer(GravityCompat.START);
+        return true;
+    }
 
-        if (view == SoundsLib) {
-            Intent intent = new Intent(getApplicationContext(), SleepNoiseLibrary.class);
-            startActivity(intent);
-            finish();
+    @Override
+    public void onBackPressed() {
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+            drawerLayout.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
         }
-        if (view == CogWheel) {
-            Intent intent = new Intent(getApplicationContext(), ProfilePage.class);
-            startActivity(intent);
-            finish();
-        }
-
     }
 }

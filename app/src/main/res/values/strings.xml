@@ -1,18 +1,5 @@
 <resources>
-    <string name="app_name">SleepApp1</string>
-    <string name="open_nav">Open SleepApp1</string>
-    <string name="close_nav">Close SleepApp1</string>
-
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="profile">profile</string>
-    <string name="title_activity_blue_light_filter">Leanback BlueLightFilter</string>
-    <string name="grid_view">Grid View</string>
-    <string name="error_fragment">Error Fragment</string>
-    <string name="personal_settings">Personal Settings</string>
-
-
-
-    <!-- Error messages -->
-    <string name="error_fragment_message">An error occurred</string>
-    <string name="dismiss_error">Dismiss</string>
+    <string name="app_name">Navigation Drawer</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
 </resources>
